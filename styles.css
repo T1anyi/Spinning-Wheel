@@ -1,0 +1,94 @@
+body{
+    display: flex;
+    font-family: 'Times New Roman';
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #66ccff;
+    background-size: cover;
+}
+.spinner{
+    width: 600px;
+    height: 600px;
+    position: relative;
+}
+.spinner::after{
+    position: absolute;
+    content: ' ';
+    width: 33px;
+    height: 33px; 
+    background-size: 32px;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#wheel{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    font-weight: 900;
+    border-radius: 50%;
+    border: 10px solid white;
+    overflow: hidden;
+    transition: ease 4s;
+} 
+span{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+}
+span b{
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,300%);
+    transform: rotate(45);
+}
+.training1 {
+background: yellow;
+clip-path: polygon(50% 50%, 100% 50%, 100% 79.25%, 75% 93.3%);
+}
+
+.training2 {
+background: pink;
+clip-path: polygon(50% 50%, 79.5% 100%, 49% 100%, 19.5% 100%);
+}
+
+
+.training3 {
+background: green;
+clip-path: polygon(50% 50%, 25% 93.3%,0% 78.87%, 0% 50%);
+}
+.training4 {
+background: red;
+clip-path: polygon(50% 50%, 0% 50%,0% 21.13%, 25% 6.7%);
+}
+.training5 {
+background: blue;
+clip-path: polygon(50% 50%, 20.31% 0%, 79.69% 0%);
+}
+.training6 {
+background: beige;
+clip-path: polygon(50% 50%, 75% 6.7%, 100% 21.13%, 100% 50%);
+}
+
+.spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background: #66ccff;
+    color: white;
+    box-shadow: 0 5px 20px #000;
+    font-weight: 900;
+    font-size: 22px;
+    cursor: pointer;
+    text-align: center;
+}
